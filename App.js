@@ -26,7 +26,7 @@ import loginScreen from "./screens/auth/loginScreen";
 import registerScreen from "./screens/auth/registerScreen";
 import otpScreen from "./screens/auth/otpScreen";
 import splashScreen from "./screens/splashScreen";
-import Map from "./screens/Map";
+import MyMap from "./screens/Map";
 const switchNavigator = createSwitchNavigator({
   Loading: LoadingScreen,
   Splash: splashScreen,
@@ -54,7 +54,7 @@ const switchNavigator = createSwitchNavigator({
     PrivacyPolicy: privacyPolicyScreen,
     TermsOfUse: termsOfUseScreen,
     Support: supportScreen,
-    Map: Map,
+    MyMap: MyMap,
   }),
 },
   {

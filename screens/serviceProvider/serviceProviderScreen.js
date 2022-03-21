@@ -77,7 +77,7 @@ class ServiceProviderScreen extends Component {
     };
 
     item = this.props.navigation.getParam('item');
-
+    title = this.props.navigation.getParam('title');
     state = {
         showSnackBar: false,
         isFavorite: false,
@@ -104,7 +104,7 @@ class ServiceProviderScreen extends Component {
                                 <View style={{ ...styles.backAndFavoriteButtonWrapStyle, marginRight: Sizes.fixPadding }}>
                                     <MaterialCommunityIcons name="message-outline" size={22}
                                         color={Colors.blackColor}
-                                        onPress={() => this.props.navigation.push('Message', { name: this.item.name })}
+                                        onPress={() => this.props.navigation.push('Message', { name: this.item.name  })}
                                     />
                                 </View>
                                 <View style={styles.backAndFavoriteButtonWrapStyle}>
@@ -338,7 +338,7 @@ class ServiceProviderScreen extends Component {
         return (
             <View style={{ marginHorizontal: Sizes.fixPadding * 2.0, marginVertical: Sizes.fixPadding + 5.0 }}>
                 <Text style={{ ...Fonts.blackColor18Bold }}>
-                    {this.item.name}
+                    {this.title ? this.title : this.item.name}
                 </Text>
                 <Text style={{
                     ...Fonts.grayColor14Medium
