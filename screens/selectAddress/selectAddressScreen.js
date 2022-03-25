@@ -11,11 +11,11 @@ const addressList = [
     {
         id: '1',
         isHome: true,
-        address: '120, Yogi Villa, Opera Street, New York.',
+        address: 'Satlliet Town, Street # 1, Rahim yar khan',
     },
     {
         id: '2',
-        address: 'G-12, ABc MArt, Opera Street, New York.',
+        address: 'Ethaad Garden, Street # 3, House no 1 Rahim yar khan',
         isHome: false,
     },
 ];

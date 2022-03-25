@@ -2,7 +2,7 @@ import React, { Component, useCallback, useState } from "react";
 import { SafeAreaView, View, StatusBar, StyleSheet, BackHandler, Text, Image, TouchableOpacity, FlatList } from "react-native";
 import { withNavigation } from "react-navigation";
 import { Colors, Sizes, Fonts } from "../../constant/styles";
-import { MaterialIcons } from '@expo/vector-icons';
+import { MaterialIcons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { TransitionPresets } from 'react-navigation-stack';
 import MenuDrawer from 'react-native-side-drawer';
 import RangeSlider from 'rn-range-slider';
@@ -360,12 +360,19 @@ class ServiceProviderListScreen extends Component {
                         Full Home Cleaning
                     </Text>
                 </View>
-                <MaterialIcons
+                <MaterialCommunityIcons
+                    name="map-marker-radius"
+                    size={20}
+                    color={Colors.primaryColor}
+                    onPress={() => this.props.navigation.push("MyMap") }
+
+               />
+                {/* <MaterialIcons
                     name="filter-list"
                     size={24}
                     color={Colors.blackColor}
                     onPress={() => this.setState({ isDrawerOpen: true })}
-                />
+                /> */}
             </View>
         )
     }

@@ -198,8 +198,8 @@ class HomeScreen extends Component {
                             marginVertical: Sizes.fixPadding + 7.0,
                         }}
                     />
-                    {this.city({ city: 'California', index: 1 })}
-                    {this.city({ city: 'Sydney', index: 2 })}
+                    {this.city({ city: 'Islamabad', index: 1 })}
+                    {this.city({ city: 'Karachi', index: 2 })}
                 </TouchableOpacity>
             </BottomSheet>
         )
@@ -369,7 +369,7 @@ class HomeScreen extends Component {
                             Location
                         </Text>
                         <Text style={{ ...Fonts.grayColor14Medium }}>
-                            New York
+                            Rahim yar khan
                         </Text>
                     </View>
                 </TouchableOpacity>
